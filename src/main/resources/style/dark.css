@@ -1,0 +1,35 @@
+.template {
+  -fx-background-color: #161616;
+  -fx-text-fill: #efefef; }
+  .template .container, .template .container > * {
+    -fx-background-color: #161616; }
+  .template Label {
+    -fx-text-fill: #efefef; }
+  .template Button {
+    -fx-background-color: #1f1f1f;
+    -fx-text-fill: #efefef;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: #efefef;
+    -fx-padding: 5px 25px; }
+    .template Button:hover {
+      -fx-border-color: #2c86ff; }
+  .template TextField, .template PasswordField {
+    -fx-background-color: #1f1f1f;
+    -fx-text-fill: #efefef;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: #efefef; }
+    .template TextField:focused, .template PasswordField:focused {
+      -fx-border-color: #2c86ff; }
+
+.bottomBar, .header {
+  -fx-padding: 30px; }
+
+.container {
+  -fx-padding: 0 0 0 30px; }
+
+.bottomBar {
+  -fx-background-color: #1f1f1f; }
+
+/*# sourceMappingURL=dark.css.map */
