@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+
+<StackPane
+        xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="controller.MigrationController"
+>
+    <VBox spacing="20.0">
+        <Label styleClass="label-title">Nice! Take a cup of coffee while you wait, you deserved it.</Label>
+        <JFXProgressBar fx:id="progressBar" prefWidth="400.0" />
+        <Label fx:id="progressStatus" styleClass="label-subtitle">Preparing</Label>
+        <Label fx:id="progressMailCount" />
+        <Label fx:id="progressRemainingTime" />
+    </VBox>
+
+</StackPane>

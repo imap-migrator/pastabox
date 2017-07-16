@@ -1,13 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-
-
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.control.ScrollPane?>
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
-      xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="controller.MappingController">
-    <ScrollPane>
-        <VBox fx:id="mappingContainer" />
-    </ScrollPane>
-</VBox>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<GridPane
+        xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="controller.MappingController"
+        hgap="50.0"
+        >
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER"  percentWidth="45.0" />
+        <ColumnConstraints hgrow="NEVER"  percentWidth="45.0"  />
+        <ColumnConstraints hgrow="NEVER"  percentWidth="30.0"  />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" />
+    </rowConstraints>
+
+    <children>
+        <Label GridPane.columnSpan="3">The fun part!</Label>
+
+        <VBox GridPane.columnIndex="0" spacing="30.0">
+            <VBox>
+                <Label styleClass="label-subtitle">Origin account</Label>
+                <JFXComboBox
+                        fx:id="account_origin"
+                        prefWidth="200.0"
+                />
+            </VBox>
+
+            <VBox>
+                <Label styleClass="label-subtitle">Origin folder</Label>
+                <ScrollPane fitToWidth="true">
+                    <JFXListView
+                            fx:id="folder_origin"
+                            depth="1"
+                    />
+                </ScrollPane>
+            </VBox>
+        </VBox>
+
+        <VBox GridPane.columnIndex="1" spacing="30.0">
+
+            <VBox>
+                <Label styleClass="label-subtitle">Target account</Label>
+                <JFXComboBox
+                        fx:id="account_target"
+                        prefWidth="150.0"
+                />
+            </VBox>
+
+            <VBox>
+                <Label styleClass="label-subtitle">Target folder</Label>
+                <ScrollPane fitToWidth="true">
+                    <JFXListView
+                            fx:id="folder_target"
+                            depth="1"
+                    />
+                </ScrollPane>
+            </VBox>
+
+        </VBox>
+
+        <!-- Action buttons -->
+        <VBox GridPane.columnIndex="2" spacing="30.0">
+            <Label styleClass="label-subtitle">Actions</Label>
+            <JFXButton onAction="#clear" text="Clear" buttonType="RAISED" styleClass="button-raised" />
+        </VBox>
+
+    </children>
+
+
+<!--
+    <GridPane>
+        Source -> Target server
+
+        <Label fx:id="account_from" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" prefWidth="500.0" />
+        <JFXComboBox fx:id="account_to" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+
+    </GridPane>-->
+</GridPane>

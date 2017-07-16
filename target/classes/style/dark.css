@@ -1,7 +1,7 @@
 .template {
   -fx-background-color: #161616;
   -fx-text-fill: #efefef; }
-  .template .container, .template .container > * {
+  .template .container, .template .container > *, .template TableColumn, .template TableColumn {
     -fx-background-color: #161616; }
   .template Label {
     -fx-text-fill: #efefef; }
@@ -22,6 +22,18 @@
     -fx-border-color: #efefef; }
     .template TextField:focused, .template PasswordField:focused {
       -fx-border-color: #2c86ff; }
+    .template TextField.error, .template PasswordField.error {
+      -fx-border-color: red; }
+
+.table-view, .table-row-cell, .table-cell, .table-view .column-header-background, .table-view .column-header {
+  -fx-background-color: #161616;
+  -fx-text-alignment: center-left; }
+
+.table-view .column-header {
+  -fx-opacity: 0; }
+
+.table-column {
+  -fx-alignment: CENTER-LEFT; }
 
 .bottomBar, .header {
   -fx-padding: 30px; }
@@ -29,7 +41,15 @@
 .container {
   -fx-padding: 0 0 0 30px; }
 
+.table-cell {
+  -fx-alignment: CENTER-LEFT; }
+
 .bottomBar {
   -fx-background-color: #1f1f1f; }
+
+.column-header-background {
+  -fx-max-height: 0;
+  -fx-pref-height: 0;
+  -fx-min-height: 0; }
 
 /*# sourceMappingURL=dark.css.map */

@@ -1,0 +1,330 @@
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Started migration for account oliver.lazovic@gmail.com of server imap.gmail.com:993,secure=1,ignoreCertErrors=0
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Migrating Belege (oliver.lazovic@gmail.com) to INBOX (test@xama.us)
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Total mails: 0
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:11:14 PM model.Migration execute
+INFO: Migrating WICHTIG! NICHT LOESCHEN (oliver.lazovic@gmail.com) to INBOX (test@xama.us)
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Total mails: 1
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:11:15 PM model.Migration execute
+INFO: Migrating Sent (oliver.lazovic@gmail.com) to Sent (test@xama.us)
+Jul 13, 2017 10:11:16 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:11:16 PM model.Migration execute
+INFO: Total mails: 11
+Jul 13, 2017 10:11:16 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:11:16 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:17 PM model.Migration execute
+INFO: Message 2 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:18 PM model.Migration execute
+INFO: Message 3 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:18 PM model.Migration execute
+INFO: Message 4 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:19 PM model.Migration execute
+INFO: Message 5 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:19 PM model.Migration execute
+INFO: Message 6 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:20 PM model.Migration execute
+INFO: Message 7 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:21 PM model.Migration execute
+INFO: Message 8 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:43 PM model.Migration execute
+INFO: Message 9 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:44 PM model.Migration execute
+INFO: Message 10 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:45 PM model.Migration execute
+INFO: Message 11 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:11:45 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:11:45 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:11:45 PM model.Migration execute
+INFO: Migrating [Gmail] (oliver.lazovic@gmail.com) to INBOX (test@xama.us)
+Jul 13, 2017 10:11:45 PM model.Migration execute
+SEVERE: Could not open folder. imap.gmail.com:993,secure=1,ignoreCertErrors=0,folder=[Gmail]
+javax.mail.MessagingException: folder cannot contain messages
+	at com.sun.mail.imap.IMAPFolder.open(IMAPFolder.java:1043)
+	at com.sun.mail.imap.IMAPFolder.open(IMAPFolder.java:973)
+	at model.Migration.execute(Migration.java:59)
+	at controller.MigrationController.lambda$start$1(MigrationController.java:48)
+	at java.lang.Thread.run(Thread.java:745)
+
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Started migration for account oliver.lazovic@gmail.com of server imap.gmail.com:993,secure=1,ignoreCertErrors=0
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Migrating Arbeit (oliver.lazovic@gmail.com) to Drafts (test@xama.us)
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Total mails: 0
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:22:59 PM model.Migration execute
+INFO: Migrating WICHTIG! NICHT LOESCHEN (oliver.lazovic@gmail.com) to Trash (test@xama.us)
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Total mails: 1
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Migrating Belege (oliver.lazovic@gmail.com) to Drafts (test@xama.us)
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Total mails: 0
+Jul 13, 2017 10:23:00 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Migrating Sent Messages (oliver.lazovic@gmail.com) to Sent (test@xama.us)
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Total mails: 70
+Jul 13, 2017 10:23:01 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:23:14 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:14 PM model.Migration execute
+INFO: Message 2 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:15 PM model.Migration execute
+INFO: Message 3 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:16 PM model.Migration execute
+INFO: Message 4 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:17 PM model.Migration execute
+INFO: Message 5 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:17 PM model.Migration execute
+INFO: Message 6 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:18 PM model.Migration execute
+INFO: Message 7 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:18 PM model.Migration execute
+INFO: Message 8 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:19 PM model.Migration execute
+INFO: Message 9 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:20 PM model.Migration execute
+INFO: Message 10 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:20 PM model.Migration execute
+INFO: Message 11 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:21 PM model.Migration execute
+INFO: Message 12 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:22 PM model.Migration execute
+INFO: Message 13 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:22 PM model.Migration execute
+INFO: Message 14 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:23 PM model.Migration execute
+INFO: Message 15 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:24 PM model.Migration execute
+INFO: Message 16 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:25 PM model.Migration execute
+INFO: Message 17 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:25 PM model.Migration execute
+INFO: Message 18 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:26 PM model.Migration execute
+INFO: Message 19 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:26 PM model.Migration execute
+INFO: Message 20 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:27 PM model.Migration execute
+INFO: Message 21 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:28 PM model.Migration execute
+INFO: Message 22 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:28 PM model.Migration execute
+INFO: Message 23 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:29 PM model.Migration execute
+INFO: Message 24 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:23:29 PM model.Migration execute
+INFO: Message 25 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:24 PM model.Migration execute
+INFO: Message 26 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:24 PM model.Migration execute
+INFO: Message 27 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:25 PM model.Migration execute
+INFO: Message 28 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:25 PM model.Migration execute
+INFO: Message 29 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:26 PM model.Migration execute
+INFO: Message 30 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:27 PM model.Migration execute
+INFO: Message 31 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:28 PM model.Migration execute
+INFO: Message 32 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:30 PM model.Migration execute
+INFO: Message 33 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:31 PM model.Migration execute
+INFO: Message 34 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:32 PM model.Migration execute
+INFO: Message 35 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:34 PM model.Migration execute
+INFO: Message 36 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:35 PM model.Migration execute
+INFO: Message 37 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:37 PM model.Migration execute
+INFO: Message 38 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:38 PM model.Migration execute
+INFO: Message 39 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:40 PM model.Migration execute
+INFO: Message 40 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:42 PM model.Migration execute
+INFO: Message 41 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:44 PM model.Migration execute
+INFO: Message 42 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:45 PM model.Migration execute
+INFO: Message 43 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:46 PM model.Migration execute
+INFO: Message 44 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:47 PM model.Migration execute
+INFO: Message 45 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:47 PM model.Migration execute
+INFO: Message 46 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:48 PM model.Migration execute
+INFO: Message 47 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:48 PM model.Migration execute
+INFO: Message 48 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:49 PM model.Migration execute
+INFO: Message 49 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:50 PM model.Migration execute
+INFO: Message 50 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:50 PM model.Migration execute
+INFO: Message 51 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:51 PM model.Migration execute
+INFO: Message 52 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:52 PM model.Migration execute
+INFO: Message 53 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:52 PM model.Migration execute
+INFO: Message 54 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:53 PM model.Migration execute
+INFO: Message 55 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:54 PM model.Migration execute
+INFO: Message 56 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:55 PM model.Migration execute
+INFO: Message 57 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:24:55 PM model.Migration execute
+INFO: Message 58 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:14 PM model.Migration execute
+INFO: Message 59 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:15 PM model.Migration execute
+INFO: Message 60 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:28 PM model.Migration execute
+INFO: Message 61 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:29 PM model.Migration execute
+INFO: Message 62 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:30 PM model.Migration execute
+INFO: Message 63 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:31 PM model.Migration execute
+INFO: Message 64 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:31 PM model.Migration execute
+INFO: Message 65 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:32 PM model.Migration execute
+INFO: Message 66 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:33 PM model.Migration execute
+INFO: Message 67 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:33 PM model.Migration execute
+INFO: Message 68 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:34 PM model.Migration execute
+INFO: Message 69 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Message 70 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Migrating [Gmail]Entwürfe (oliver.lazovic@gmail.com) to Drafts (test@xama.us)
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Total mails: 4
+Jul 13, 2017 10:25:55 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:25:56 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:57 PM model.Migration execute
+INFO: Message 2 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:58 PM model.Migration execute
+INFO: Message 3 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Message 4 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Migrating Sent (oliver.lazovic@gmail.com) to Sent (test@xama.us)
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Origin folder opened with mode READ_ONLY.
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Total mails: 11
+Jul 13, 2017 10:25:59 PM model.Migration execute
+INFO: Target folder opened with mode READ_WRITE.
+Jul 13, 2017 10:26:00 PM model.Migration execute
+INFO: Message 1 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:00 PM model.Migration execute
+INFO: Message 2 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:01 PM model.Migration execute
+INFO: Message 3 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:02 PM model.Migration execute
+INFO: Message 4 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:02 PM model.Migration execute
+INFO: Message 5 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:03 PM model.Migration execute
+INFO: Message 6 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:03 PM model.Migration execute
+INFO: Message 7 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:04 PM model.Migration execute
+INFO: Message 8 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:29 PM model.Migration execute
+INFO: Message 9 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:30 PM model.Migration execute
+INFO: Message 10 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:31 PM model.Migration execute
+INFO: Message 11 copied to mail.blackvoid.ch:993,secure=1,ignoreCertErrors=1 
+Jul 13, 2017 10:26:31 PM model.Migration execute
+INFO: Origin folder closed.
+Jul 13, 2017 10:26:31 PM model.Migration execute
+INFO: Target folder closed.
+Jul 13, 2017 10:26:31 PM model.Migration execute
+INFO: Migrating [Gmail] (oliver.lazovic@gmail.com) to INBOX (test@xama.us)
+Jul 13, 2017 10:26:31 PM model.Migration execute
+SEVERE: Could not open folder. imap.gmail.com:993,secure=1,ignoreCertErrors=0,folder=[Gmail]
+javax.mail.MessagingException: folder cannot contain messages
+	at com.sun.mail.imap.IMAPFolder.open(IMAPFolder.java:1043)
+	at com.sun.mail.imap.IMAPFolder.open(IMAPFolder.java:973)
+	at model.Migration.execute(Migration.java:60)
+	at controller.MigrationController.lambda$start$1(MigrationController.java:49)
+	at java.lang.Thread.run(Thread.java:745)
+

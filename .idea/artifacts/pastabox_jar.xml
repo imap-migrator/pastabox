@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="pastabox:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pastabox_jar</output-path>
+    <root id="archive" name="imapmigrator.jar">
+      <element id="module-output" name="imapmigrator" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jfoenix/jfoenix/1.4.0/jfoenix-1.4.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

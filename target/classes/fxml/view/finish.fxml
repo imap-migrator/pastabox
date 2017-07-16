@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<StackPane
+        xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="controller.FinishController"
+>
+    <VBox spacing="20.0">
+        <Label styleClass="label-title">Phew! That's it.</Label>
+        <Label>Your e-mails have been migrated. PLEASE check the details below to ensure everything went the way it's supposed to.</Label>
+    </VBox>
+
+</StackPane>

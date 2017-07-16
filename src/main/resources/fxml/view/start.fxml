@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import com.jfoenix.controls.JFXButton?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
-            xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="controller.StartController">
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartController">
    <top>
       <VBox BorderPane.alignment="CENTER">
-         <children>
-            <Label text="Welcome!">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Label text="You can use this tool to migrate e-mails from server to another." />
-             <VBox prefHeight="30.0" />
-             <Button mnemonicParsing="false" text="Let's go!" BorderPane.alignment="CENTER" onAction="#next" />
-         </children>
+         <ImageView>
+            <Image url="/images/pastabox@150px.png" />
+         </ImageView>
+         <HBox prefHeight="30.0" />
+         <Label text="Let's migrate some mails, shall we?" styleClass="label-title" />
+         <Label text="To start, simply click on next. You'll be asked for some details and finally you'll be able to let this tool do the rest. Simple, ain't it?"
+                styleClass="label-subtitle"
+                style="-fx-font-weight: normal"
+                wrapText="true"/>
+         <VBox prefHeight="30.0"/>
+         <HBox spacing="20.0">
+            <JFXButton text="About" buttonType="RAISED" styleClass="button-raised" onAction="#showAboutDialog"  />
+            <JFXButton text="License" buttonType="RAISED" styleClass="button-raised" onAction="#showLicenseDialog"  />
+            <JFXButton text="Settings" buttonType="RAISED" styleClass="button-raised" onAction="#showSettingsDialog"  />
+         </HBox>
       </VBox>
    </top>
 </BorderPane>

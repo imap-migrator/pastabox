@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerController">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER"  percentWidth="40.0" />
+        <ColumnConstraints hgrow="NEVER"  percentWidth="60.0"  />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES" />
+        <RowConstraints vgrow="ALWAYS" />
+    </rowConstraints>
+
+    <Label fx:id="title" styleClass="label-title" GridPane.rowIndex="0" GridPane.columnSpan="2">
+        <padding>
+            <Insets bottom="20.0" />
+        </padding>
+    </Label>
+
+    <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="1" fitToWidth="true" fitToHeight="true">
+        <JFXListView fx:id="loginTableView" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    </ScrollPane>
+
+
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" spacing="30.0">
+        <padding>
+            <Insets left="50.0" />
+        </padding>
+
+        <Label styleClass="label-subtitle">Server</Label>
+
+        <HBox spacing="10.0">
+            <JFXTextField fx:id="server" prefWidth="150.0" promptText="Server" labelFloat="true"/>
+            <JFXTextField fx:id="port" prefWidth="50.0" promptText="Port" labelFloat="true"/>
+        </HBox>
+
+        <JFXCheckBox fx:id="secure" mnemonicParsing="false"  text="Secure connection" />
+
+        <JFXCheckBox fx:id="ignoreCertErrors" mnemonicParsing="false"  text="Ignore certificate errors" />
+
+        <Label styleClass="label-subtitle">Add Login</Label>
+
+        <HBox spacing="10.0">
+            <JFXTextField fx:id="username" promptText="Username" labelFloat="true" />
+            <JFXPasswordField fx:id="password" promptText="Password" labelFloat="true" />
+            <JFXButton mnemonicParsing="false" onAction="#addLogin" text="Add"  />
+        </HBox>
+    </VBox>
+
+</GridPane>

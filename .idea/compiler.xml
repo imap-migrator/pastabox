@@ -19,8 +19,8 @@
         <module name="imapmigrator" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="imapmigrator" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="imapmigrator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,7 +2,7 @@
   -fx-background-color: #161616;
   -fx-text-fill: #efefef;
 
-  .container, .container > * {
+  .container, .container > *, TableColumn, TableColumn {
     -fx-background-color: #161616;
   }
 
@@ -33,7 +33,24 @@
     &:focused {
       -fx-border-color: #2c86ff;
     }
+
+    &.error {
+      -fx-border-color:red;
+    }
   }
+}
+
+.table-view, .table-row-cell, .table-cell, .table-view .column-header-background, .table-view .column-header {
+  -fx-background-color: #161616;
+  -fx-text-alignment: center-left;
+}
+
+.table-view .column-header {
+  -fx-opacity: 0;
+}
+
+.table-column {
+  -fx-alignment: CENTER-LEFT;
 }
 
 .bottomBar, .header {
@@ -44,7 +61,16 @@
   -fx-padding: 0 0 0 30px;
 }
 
+.table-cell {
+  -fx-alignment: CENTER-LEFT;
+}
 
 .bottomBar {
   -fx-background-color: #1f1f1f;
+}
+
+.column-header-background {
+  -fx-max-height: 0;
+  -fx-pref-height: 0;
+  -fx-min-height: 0;
 }

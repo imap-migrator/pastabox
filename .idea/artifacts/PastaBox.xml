@@ -1,0 +1,33 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PastaBox">
+    <output-path>$PROJECT_DIR$/out/artifacts/PastaBox</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="convertCss2Bin" value="true" />
+        <option name="description" value="Migrates e-mails from one mail server to another via IMAP." />
+        <option name="height" value="600" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/icons/pastabox.png_128x128.png" />
+            <option name="macIcon" value="$PROJECT_DIR$/icons/pastabox.png.icns" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/icons/pastabox.png.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="PastaBox" />
+        <option name="vendor" value="Oliver Lazovic" />
+        <option name="version" value="1.0" />
+        <option name="width" value="900" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="pastabox.jar">
+        <element id="module-output" name="imapmigrator" />
+        <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.6" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,5 @@
 package helper;
 
-import controller.TemplateController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
