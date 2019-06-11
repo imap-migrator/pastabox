@@ -80,7 +80,7 @@ public class MappingController implements WizardInterface {
         Folder[] folders = new Folder[0];
         if(login != null) {
             try {
-                folders = login.getStore().getDefaultFolder().list();
+                folders = login.getStore().getDefaultFolder().list("*");
             } catch (MessagingException | GeneralSecurityException e) {
                 DataHelper.getLogger(this.getClass())
                         .log(Level.SEVERE, "Could not get account folders", e);
